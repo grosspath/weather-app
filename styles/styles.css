@@ -1,0 +1,191 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+
+/*
+Styling for home screen
+*/
+
+#home {
+  background-image: url(../images/home-screen.jpeg);
+  background-size: cover;
+  height: 58rem;
+  margin: 0;
+  padding: 2%;
+  opacity: .7;
+}
+
+.title {
+  padding: 10%;
+  font-size: 7.1vh;
+  color: grey;
+  font-weight: bolder;
+  text-shadow: 1px 1px 1px grey;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.input {
+  padding: 1.2%;
+  margin-left: 32%;
+  margin-right: 32%;
+}
+
+.input-field {
+  padding: 1.6%;
+  font-size: 2vh;
+  margin-right: 6%;
+}
+
+.button {
+  padding: 1.4%;
+  margin-top: 10%;
+  margin-bottom: -2%;
+  font-size: 2vh;
+  color: white;
+  margin-left: 42%;
+  margin-right: 42%;
+  background-color: grey;
+}
+
+/*
+Styling for footer
+*/
+
+.footer {
+  width: 100%;
+  height: 1rem;
+  background-color: white;
+  position: absolute;
+  bottom: -8%;
+  font-size: 3.5vh;
+  padding: 3%;
+  margin-left: -2%;
+  overflow: hidden;
+}
+.section--social {
+  float: right;
+  margin-right: 1rem;
+  padding: 1%;
+}
+
+.social {
+  margin-right: 0.1rem;
+}
+
+.socialWrapper:last-child .social {
+  margin-right: 0;
+}
+
+.socialWrapper {
+  display: inline-block;
+  font-size: 2rem;
+  padding: 0.6rem;
+  margin-top: 0;
+}
+
+
+#logo {
+  position: fixed;
+  top: 12%;
+  left: 2%;
+  margin-right: 8px;
+  display: inline;
+  margin-top: -15px;
+}
+
+/*
+Styling for current page
+*/
+
+
+.border {
+  position: relative;
+  background-color: #7F928A;
+  height: 9vh;
+}
+
+.current {
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 1.4%;
+  border-bottom: 1px solid #CCCCCC;
+}
+.current li {
+  text-align: center;
+  display: inline;
+  padding: 10%;
+  font-size: 1.2vw;
+}
+
+.current-title {
+  color: black;
+}
+
+.current li a {
+  color: #A1D4A1;
+  text-decoration: none;
+  padding: 0.2vh;
+}
+
+.city-name {
+  padding-top: 4%;
+  font-size: 6vh;
+  position: relative;
+  left: 10%;
+  padding-bottom: 0.5%;
+}
+
+.date {
+  color: #BFBFBF;
+  font-size: 3.1vh;
+  position: relative;
+  left: 10%;
+}
+
+.icon {
+  width: 24vh;
+  position: relative;
+  left: 8%;
+  padding: 1%;
+}
+
+.temp {
+  font-size: 10vh;
+  position: relative;
+  left: 10%;
+}
+
+.condition {
+  color: #5753FF;
+  font-size: 4vh;
+  position: relative;
+  left: 10%;
+
+}
+
+#showWeather {
+  background-color: #CCCCCC;
+  color: white;
+  width: 30%;
+  position: relative;
+  top: -440px;
+  left: 34%;
+  padding: 3%;
+  letter-spacing: 0.2vh;
+  line-height: 3.8vh;
+}
+
+.data-results {
+  font-size: 2.2vh;
+}
+
+.bottom-border {
+    border-bottom: 1px solid #CCCCCC;
+}
