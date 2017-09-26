@@ -2,33 +2,36 @@ import React, { Component } from 'react';
 import { Redirect } from 'react-router';
 
 
-
-class HomeView extends React.Component {
-
+class ViewHome extends React.Component {
+  //initialize state
   constructor(props) {
     super(props);
 
     this.state = {
       zipCode: '',
       countryCode: '',
-      fireRedirect: false
+      fireRedirect: false,
     };
     this.onFormSubmit = this.onFormSubmit.bind(this);
   };
 
   onFormSubmit(evt) {
-    evt.preventDefault()
-    this.setState({fireRedirect: true})
 
+    evt.preventDefault();
+    this.setState({ fireRedirect: true });
+
+    //how props are passed to another component in react router v4
+    this.props.history.push({pathname: '/current', state: this.state});
   };
 
+  //update the state as text is entered into the input fields
   handleChange (evt) {
     this.setState({[evt.target.name]: evt.target.value});
   };
 
   render() {
 
-    const { fireRedirect } = this.state
+    const { fireRedirect } = this.state;
 
     return (
 
@@ -43,14 +46,15 @@ class HomeView extends React.Component {
           </form>
           <div className="center-block">
             <button onClick={this.onFormSubmit} className="button">Get Weather</button>
+            {/*Use Redirect in the body of the component to go to the current page  */}
+            {fireRedirect && (
+              <Redirect to={'/current'} />
+            )}
           </div>
-          {fireRedirect && (
-            <Redirect to={'/current'} city={this.state}/>
-          )}
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default HomeView;
+export default ViewHome;

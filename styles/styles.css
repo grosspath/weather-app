@@ -15,20 +15,19 @@ Styling for home screen
 #home {
   background-image: url(../images/home-screen.jpeg);
   background-size: cover;
-  height: 58rem;
+  height: 74rem;
   margin: 0;
-  padding: 2%;
-  opacity: .7;
 }
 
 .title {
+  text-align: center;
   padding: 10%;
-  font-size: 7.1vh;
+  font-size: 6.9vh;
   color: grey;
   font-weight: bolder;
   text-shadow: 1px 1px 1px grey;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .input {
@@ -38,19 +37,18 @@ Styling for home screen
 }
 
 .input-field {
+  width: 38%;
   padding: 1.6%;
   font-size: 2vh;
-  margin-right: 6%;
+  margin-right: 8%;
 }
 
 .button {
-  padding: 1.4%;
-  margin-top: 10%;
-  margin-bottom: -2%;
+  padding: 1.1%;
+  margin: 8% 44%;
   font-size: 2vh;
   color: white;
-  margin-left: 42%;
-  margin-right: 42%;
+  text-align: center;
   background-color: grey;
 }
 
@@ -67,7 +65,7 @@ Styling for footer
   font-size: 3.5vh;
   padding: 3%;
   margin-left: -2%;
-  overflow: hidden;
+  margin-bottom: 4%
 }
 .section--social {
   float: right;
@@ -88,16 +86,6 @@ Styling for footer
   font-size: 2rem;
   padding: 0.6rem;
   margin-top: 0;
-}
-
-
-#logo {
-  position: fixed;
-  top: 12%;
-  left: 2%;
-  margin-right: 8px;
-  display: inline;
-  margin-top: -15px;
 }
 
 /*
@@ -136,7 +124,7 @@ Styling for current page
 
 .city-name {
   padding-top: 4%;
-  font-size: 6vh;
+  font-size: 10vh;
   position: relative;
   left: 10%;
   padding-bottom: 0.5%;
@@ -175,8 +163,8 @@ Styling for current page
   color: white;
   width: 30%;
   position: relative;
-  top: -440px;
-  left: 34%;
+  top: -40vh;
+  left: 44%;
   padding: 3%;
   letter-spacing: 0.2vh;
   line-height: 3.8vh;

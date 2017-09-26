@@ -1,0 +1,48 @@
+{
+  "coord":
+{
+  "lon":-80.18,
+  "lat":32.98
+},
+"weather":
+[
+  {
+    "id":802,
+    "main":"Clouds",
+    "description":"scattered clouds",
+    "icon":"03d"
+  }
+],
+"base":"stations",
+"main":
+{
+  "temp":80.01,
+  "pressure":1013,
+  "humidity":65,
+  "temp_min":77,
+  "temp_max":82.4
+},
+"visibility":16093,
+"wind":
+{
+  "speed":9.17,
+  "deg":20
+},
+"clouds":
+{
+  "all":40
+},
+"dt":1506362100,
+"sys":
+{
+  "type":1,
+  "id":2437,
+  "message":0.0044,
+  "country":"US",
+  "sunrise":1506337893,
+  "sunset":1506381116
+},
+"id":0,
+"name":"Summerville",
+"cod":200
+}
