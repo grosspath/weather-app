@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Redirect } from 'react-router';
 
 
+
 class ViewHome extends React.Component {
   //initialize state
   constructor(props) {
@@ -21,7 +22,7 @@ class ViewHome extends React.Component {
     this.setState({ fireRedirect: true });
 
     //how props are passed to another component in react router v4
-    this.props.history.push({pathname: '/current', state: this.state});
+    this.props.history.push({pathname: '/getCurrent', zip: this.state.zipCode, code: this.state.countryCode});
   };
 
   //update the state as text is entered into the input fields
@@ -48,7 +49,7 @@ class ViewHome extends React.Component {
             <button onClick={this.onFormSubmit} className="button">Get Weather</button>
             {/*Use Redirect in the body of the component to go to the current page  */}
             {fireRedirect && (
-              <Redirect to={'/current'} />
+              <Redirect to={'/getCurrent'} />
             )}
           </div>
         </div>

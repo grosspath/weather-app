@@ -56,17 +56,7 @@ Styling for home screen
 Styling for footer
 */
 
-.footer {
-  width: 100%;
-  height: 1rem;
-  background-color: white;
-  position: absolute;
-  bottom: -8%;
-  font-size: 3.5vh;
-  padding: 3%;
-  margin-left: -2%;
-  margin-bottom: 4%
-}
+
 .section--social {
   float: right;
   margin-right: 1rem;
@@ -92,6 +82,10 @@ Styling for footer
 Styling for current page
 */
 
+
+.curentPage {
+  background-color: #688AA4;
+}
 
 .border {
   position: relative;
@@ -126,7 +120,7 @@ Styling for current page
   padding-top: 4%;
   font-size: 10vh;
   position: relative;
-  left: 10%;
+  text-align: center;
   padding-bottom: 0.5%;
 }
 
@@ -151,7 +145,7 @@ Styling for current page
 }
 
 .condition {
-  color: #5753FF;
+  color: white;
   font-size: 4vh;
   position: relative;
   left: 10%;
@@ -176,4 +170,13 @@ Styling for current page
 
 .bottom-border {
     border-bottom: 1px solid #CCCCCC;
+}
+
+.box {
+  max-width: 25%;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin: 10px auto;
+  text-align: center;
+  padding: 20px;
 }
