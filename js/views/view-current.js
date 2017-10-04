@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const ViewCurrent = ({isLoading, currentData, zip, code}) => (
 
   (isLoading === true) ?
-  (<h1 className="loading">Loading</h1>) :
+  (<h1 className="loading"></h1>) :
   (
     <span>
 

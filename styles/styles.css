@@ -13,7 +13,7 @@ Styling for home screen
 */
 
 #home {
-  background-image: url(../images/home-screen.jpeg);
+  background-image: url(../images/jeremy-bishop-266162.jpg);
   background-size: cover;
   height: 74rem;
   margin: 0;
@@ -21,9 +21,9 @@ Styling for home screen
 
 .title {
   text-align: center;
-  padding: 10%;
+  padding: 10% 0 2% 0;
   font-size: 6.9vh;
-  color: grey;
+  color: rgba(198, 225, 167, 0.5);
   font-weight: bolder;
   text-shadow: 1px 1px 1px grey;
   margin-left: auto;
@@ -31,25 +31,25 @@ Styling for home screen
 }
 
 .input {
-  padding: 1.2%;
-  margin-left: 32%;
-  margin-right: 32%;
+  margin: 8% 0 0 25.6%;
 }
 
 .input-field {
-  width: 38%;
-  padding: 1.6%;
-  font-size: 2vh;
-  margin-right: 8%;
+  width: 28%;
+  font-size: 1.9vh;
+  padding: 0.9vh;
+  cursor: text;
 }
 
 .button {
-  padding: 1.1%;
-  margin: 8% 44%;
-  font-size: 2vh;
+  cursor: pointer;
+  width: 10%;
+  padding: 1.2vh 0.9vh 0.9vh 0.9vh;
+  font-size: 1.6vh;
   color: white;
   text-align: center;
-  background-color: grey;
+  border: 0.2vh solid white;
+  background: rgba(0, 0, 0, 0);
 }
 
 /*
@@ -60,7 +60,7 @@ Styling for footer
 .section--social {
   float: right;
   margin-right: 1rem;
-  padding: 1%;
+  padding: 1.4%;
 }
 
 .social {
@@ -73,7 +73,7 @@ Styling for footer
 
 .socialWrapper {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 2.4rem;
   padding: 0.6rem;
   margin-top: 0;
 }
@@ -83,37 +83,40 @@ Styling for current page
 */
 
 
-.curentPage {
-  background-color: #688AA4;
+.currentPage {
+  background-image: url(../images/IMG_6682.JPG);
+  background-size: cover;
 }
 
 .border {
   position: relative;
-  background-color: #7F928A;
+  background-color: #027ABF;
   height: 9vh;
 }
 
 .current {
   text-align: center;
-  padding-top: 2%;
-  padding-bottom: 1.4%;
-  border-bottom: 1px solid #CCCCCC;
+  padding-top: 1.2%;
+  border-bottom: 0.2vh solid #CCCCCC;
 }
 .current li {
   text-align: center;
   display: inline;
   padding: 10%;
-  font-size: 1.2vw;
+  font-size: 1.4vw;
+  margin-bottom: 2%;
 }
 
 .current-title {
   color: black;
+  font-size: 2.2vw
 }
 
 .current li a {
-  color: #A1D4A1;
+  color: #E5DDCE;
   text-decoration: none;
-  padding: 0.2vh;
+  padding: 2.2vh;
+  margin-top: -1vh;
 }
 
 .city-name {
@@ -122,26 +125,29 @@ Styling for current page
   position: relative;
   text-align: center;
   padding-bottom: 0.5%;
+  color: #fff;
 }
 
 .date {
-  color: #BFBFBF;
+  color: #fff;
   font-size: 3.1vh;
   position: relative;
-  left: 10%;
+  text-align: center;
 }
 
 .icon {
-  width: 24vh;
+  width: 44vh;
   position: relative;
-  left: 8%;
-  padding: 1%;
+  left: 0.5%;
+  top: -15%;
 }
 
 .temp {
   font-size: 10vh;
   position: relative;
-  left: 10%;
+  left: 6%;
+  top: -3.5%;
+  color: #fff;
 }
 
 .condition {
@@ -153,15 +159,19 @@ Styling for current page
 }
 
 #showWeather {
-  background-color: #CCCCCC;
-  color: white;
+  color: #fff;
   width: 30%;
   position: relative;
-  top: -40vh;
-  left: 44%;
-  padding: 3%;
-  letter-spacing: 0.2vh;
-  line-height: 3.8vh;
+  top: -48vh;
+  left: 35%;
+  padding: 2%;
+  letter-spacing: 0.3vh;
+  line-height: 3.9vh;
+  background: #6B8AA3;
+  background: linear-gradient(#6B8AA3, #02BBEF);
+  padding: 1.2vw;
+  border: 0.3vw solid slategray;
+  border-radius: 1vw;
 }
 
 .data-results {
@@ -173,10 +183,49 @@ Styling for current page
 }
 
 .box {
-  max-width: 25%;
-  border: 3px solid black;
-  border-radius: 10px;
-  margin: 10px auto;
+  width: 30%;
+  border: 0.3vw solid slategray;
+  border-radius: 1vw;
+  margin: 1.4vw;
   text-align: center;
-  padding: 20px;
+  padding: 2vw;
+  display: inline-block;
+}
+
+/*
+Styling for Forecast Boxes
+*/
+
+.cube {
+  background: #6B8AA3;
+  background: linear-gradient(#6B8AA3, #02BBEF);
+  color: #FFD795;
+  width: 40%;
+  border: 0.3vw solid slategray;
+  border-radius: 1vw;
+  margin: 2% 0 2% 6%;
+  text-align: center;
+  padding: 2vw;
+  display: inline-block;
+}
+
+.box-high {
+  padding: 0.5vw;
+}
+
+.loading {
+    position: relative;
+    bottom: 50%;
+    margin: auto;
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

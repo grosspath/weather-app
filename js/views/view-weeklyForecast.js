@@ -6,7 +6,7 @@ import WeeklyForecast from './view-weeklyForecastDay';
 import { Link } from 'react-router-dom';
 
 const WeeklyForecastUI = ({weeklyForecastData, lat, lon, zip, code}) => (
-  <div>
+  <div className="box-map">
     {weeklyForecastData.daily.data.map(function (listItem) {
       return <WeeklyForecast key={Math.random()} day={listItem} weeklyForecastData={weeklyForecastData} zip={zip} code={code}/>
     })}
@@ -17,7 +17,7 @@ const WeeklyForecastUI = ({weeklyForecastData, lat, lon, zip, code}) => (
 const ViewWeeklyForecast = ({isLoading, weeklyForecastData, lat, lon, zip, code}) => (
 
   (isLoading === true) ?
-    (<h1 className="loading">Loading</h1>) :
+    (<h1 className="loading"></h1>) :
     (
       <span>
 
@@ -25,7 +25,7 @@ const ViewWeeklyForecast = ({isLoading, weeklyForecastData, lat, lon, zip, code}
 
           <ul>
             <li><Link to='/'>&#8249; SEARCH</Link></li>
-            <li><span className="forecast-title">FORECAST</span></li>
+            <li><span className="current-title">FORECAST</span></li>
             <li><Link to={{pathname: '/getCurrent',
                            zip: zip,
                            code: code}}>CURRENT &#8250;</Link></li>

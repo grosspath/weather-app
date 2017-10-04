@@ -41,18 +41,19 @@ class ViewHome extends React.Component {
         <div>
           <form className="input">
             <input className="input-field" type="text" placeholder="zipcode" name="zipCode" value={this.state.name}
-              onChange={(evt) => this.handleChange(evt)}/>
+              onChange={(evt) => this.handleChange(evt)} required="required"/>
             <input className="input-field" type="text" placeholder="country code (ex. us)" name="countryCode" value={this.state.name}
-              onChange={(evt) => this.handleChange(evt)}/>
+              onChange={(evt) => this.handleChange(evt)} required="required"/>
+              <input type="submit" onClick={this.onFormSubmit} className="button" />
           </form>
-          <div className="center-block">
-            <button onClick={this.onFormSubmit} className="button">Get Weather</button>
+
+
             {/*Use Redirect in the body of the component to go to the current page  */}
             {fireRedirect && (
               <Redirect to={'/getCurrent'} />
             )}
           </div>
-        </div>
+
       </div>
     );
   }

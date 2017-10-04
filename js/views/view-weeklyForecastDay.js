@@ -13,13 +13,14 @@ const WeeklyForecast  = ({day, zip, code, weeklyForecastData}) => {
 
   return (
 
-    <div className="container box">
+    <div className="cube">
 
-      <h1>{date}</h1>
-      <h1>{high} / {low}</h1>
-      <h3>{icon}</h3>
+      <h1 className="box-date">{date}</h1>
+      <h1 className="box-high">H{high} / L{low}</h1>
+      <h3 className="box-icon">{icon}</h3>
       <BuildIcon icon={icon} />
-      <h3>{summary}</h3>
+      <h3 className="box-summary">{summary}</h3>
+      <h5><a href="https://darksy.net/poweredby/">Powered by Dark Sky</a></h5>
 
     </div>
 
