@@ -196,17 +196,33 @@ Styling for current page
 Styling for Forecast Boxes
 */
 
+
+.box-map {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+
+
+
+}
+
+.child {
+
+}
 .cube {
+
+  border: 1px solid black;
+  min-width: 30%;
+  min-height: 40%;
   background: #6B8AA3;
   background: linear-gradient(#6B8AA3, #02BBEF);
   color: #FFD795;
-  width: 40%;
   border: 0.3vw solid slategray;
-  border-radius: 1vw;
-  margin: 2% 0 2% 6%;
+  border-radius: 0.5vw;
   text-align: center;
   padding: 2vw;
-  display: inline-block;
+  margin: 2vh;
 }
 
 .box-high {

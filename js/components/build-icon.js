@@ -6,7 +6,9 @@ class BuildIcon extends React.Component {
   render() {
     let icon = this.props.icon.toUpperCase().replace(/-/g, '_');
     return (
-      <Skycons color="white" icon={icon} />
+      <div className="child">
+        <Skycons color="black" icon={icon} />
+      </div>
     );
   }
 };
